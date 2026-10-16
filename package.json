@@ -1,0 +1,55 @@
+{
+  "name": "ns-ui",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "NS UI Vue 3 基础组件库",
+  "packageManager": "pnpm@11.4.0",
+  "files": [
+    "dist",
+    "README.md",
+    "release-notes.json"
+  ],
+  "main": "./dist/ns-ui.js",
+  "module": "./dist/ns-ui.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/ns-ui.js"
+    },
+    "./style.css": "./dist/ns-ui.css",
+    "./theme.css": "./dist/theme.css"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "build": "node scripts/check-release.mjs && pnpm run typecheck && vite build && vue-tsc -p tsconfig.build.json && node scripts/finalize-types.mjs && tsc -p tsconfig.package.json",
+    "build:playground": "vite build --mode playground",
+    "pack:local": "pnpm run build && pnpm pack --pack-destination artifacts",
+    "verify:ui": "pnpm run build:playground && node scripts/verify-ui.mjs"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0"
+  },
+  "dependencies": {
+    "@iconify/vue": "^5.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "6.0.10",
+    "@vue/test-utils": "2.4.10",
+    "jsdom": "29.1.1",
+    "playwright": "^1.64.1",
+    "sass": "1.99.0",
+    "typescript": "5.9.3",
+    "unplugin-auto-import": "21.0.0",
+    "vite": "8.0.16",
+    "vitest": "4.1.5",
+    "vue": "3.5.34",
+    "vue-tsc": "3.1.6"
+  }
+}

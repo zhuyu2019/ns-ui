@@ -1,0 +1,15 @@
+export type NsPlacement =
+  | 'top'
+  | 'top-start'
+  | 'top-end'
+  | 'bottom'
+  | 'bottom-start'
+  | 'bottom-end'
+  | 'left'
+  | 'right'
+  | 'left-start'
+  | 'left-end'
+  | 'right-start'
+  | 'right-end'
+
+export type NsCloseReason = 'close-button' | 'escape' | 'outside' | 'select' | 'programmatic'

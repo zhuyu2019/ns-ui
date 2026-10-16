@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "types": [
+      "vite/client"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "src/**/*.json",
+    "playground/**/*.vue",
+    "playground/**/*.ts"
+  ]
+}

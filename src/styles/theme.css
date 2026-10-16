@@ -1,0 +1,128 @@
+:root,
+[data-ns-theme='light'] {
+  color-scheme: light;
+  --ns-color-white: #ffffff;
+  --ns-bg-color: #ffffff;
+  --ns-bg-elevated: #ffffff;
+  --ns-text-color-primary: #20242a;
+  --ns-text-color-regular: #4e5661;
+  --ns-text-color-muted: #707985;
+  --ns-fill-color-light: #f2f5f7;
+  --ns-fill-color: #e9edf0;
+  --ns-fill-color-dark: #dce2e6;
+  --ns-border-color: #d8dee3;
+  --ns-border-color-strong: #bbc5cd;
+  --ns-color-primary: #286c87;
+  --ns-color-primary-light-3: #5690a7;
+  --ns-color-primary-light-5: #82adbd;
+  --ns-color-primary-light-7: #aecbd5;
+  --ns-color-primary-light-8: #c5d9e0;
+  --ns-color-primary-light-9: #e1edf0;
+  --ns-color-primary-dark-2: #1d5368;
+  --ns-color-success: #16856b;
+  --ns-color-success-light-3: #4ca58e;
+  --ns-color-success-light-5: #82c0ae;
+  --ns-color-success-light-7: #b4dacf;
+  --ns-color-success-light-8: #cce5dd;
+  --ns-color-success-light-9: #e2f1ec;
+  --ns-color-success-dark-2: #106951;
+  --ns-color-warning: #a76b12;
+  --ns-color-warning-light-3: #c08d43;
+  --ns-color-warning-light-5: #d2ad78;
+  --ns-color-warning-light-7: #e4cdaa;
+  --ns-color-warning-light-8: #eddbc2;
+  --ns-color-warning-light-9: #f5ead8;
+  --ns-color-warning-dark-2: #80500d;
+  --ns-color-danger: #b93f45;
+  --ns-color-danger-light-3: #ca6a6e;
+  --ns-color-danger-light-5: #d99194;
+  --ns-color-danger-light-7: #e8b8b9;
+  --ns-color-danger-light-8: #efcbcc;
+  --ns-color-danger-light-9: #f7e4e4;
+  --ns-color-danger-dark-2: #923137;
+  --ns-color-info: #687783;
+  --ns-color-info-light-3: #87939c;
+  --ns-color-info-light-5: #a5afb5;
+  --ns-color-info-light-7: #c3cacf;
+  --ns-color-info-light-8: #d2d8db;
+  --ns-color-info-light-9: #e7eaec;
+  --ns-color-info-dark-2: #4c5963;
+  --ns-overlay-backdrop: rgb(18 27 34 / 42%);
+  --ns-shadow-overlay: 0 16px 48px rgb(19 34 42 / 20%), 0 4px 12px rgb(19 34 42 / 10%);
+  --ns-radius-sm: 4px;
+  --ns-radius-md: 6px;
+  --ns-radius-lg: 10px;
+  --ns-overlay-z-index: 3000;
+  --ns-motion-fast: 100ms;
+  --ns-motion-normal: 160ms;
+  --ns-motion-easing: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+:root.dark,
+[data-ns-theme='dark'] {
+  color-scheme: dark;
+  --ns-color-white: #171c20;
+  --ns-bg-color: #171c20;
+  --ns-bg-elevated: #20272c;
+  --ns-text-color-primary: #e6ebee;
+  --ns-text-color-regular: #c6cfd4;
+  --ns-text-color-muted: #9ba8af;
+  --ns-fill-color-light: #293238;
+  --ns-fill-color: #333e44;
+  --ns-fill-color-dark: #3e4b52;
+  --ns-border-color: #3b474e;
+  --ns-border-color-strong: #536169;
+  --ns-color-primary: #70b4ca;
+  --ns-color-primary-light-3: #5794a8;
+  --ns-color-primary-light-5: #43788a;
+  --ns-color-primary-light-7: #315968;
+  --ns-color-primary-light-8: #294954;
+  --ns-color-primary-light-9: #20363e;
+  --ns-color-primary-dark-2: #95cad9;
+  --ns-color-success: #65c5a4;
+  --ns-color-success-light-3: #4ca58e;
+  --ns-color-success-light-5: #3b8471;
+  --ns-color-success-light-7: #2d6356;
+  --ns-color-success-light-8: #285348;
+  --ns-color-success-light-9: #203b34;
+  --ns-color-success-dark-2: #88d3b9;
+  --ns-color-warning: #e5b66d;
+  --ns-color-warning-light-3: #c9964e;
+  --ns-color-warning-light-5: #a77a3c;
+  --ns-color-warning-light-7: #805e31;
+  --ns-color-warning-light-8: #6a4e2c;
+  --ns-color-warning-light-9: #493825;
+  --ns-color-warning-dark-2: #efca91;
+  --ns-color-danger: #ef8588;
+  --ns-color-danger-light-3: #cc696d;
+  --ns-color-danger-light-5: #aa5358;
+  --ns-color-danger-light-7: #803d43;
+  --ns-color-danger-light-8: #693439;
+  --ns-color-danger-light-9: #48282b;
+  --ns-color-danger-dark-2: #f4a1a2;
+  --ns-color-info: #acbac1;
+  --ns-color-info-light-3: #87969e;
+  --ns-color-info-light-5: #6d7c83;
+  --ns-color-info-light-7: #515f66;
+  --ns-color-info-light-8: #434f56;
+  --ns-color-info-light-9: #303a3f;
+  --ns-color-info-dark-2: #c4cfd4;
+  --ns-overlay-backdrop: rgb(0 0 0 / 62%);
+  --ns-shadow-overlay: 0 18px 52px rgb(0 0 0 / 42%), 0 4px 14px rgb(0 0 0 / 26%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root,
+  :root *,
+  :root *::before,
+  :root *::after,
+  [data-ns-theme],
+  [data-ns-theme] *,
+  [data-ns-theme] *::before,
+  [data-ns-theme] *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
